@@ -1,17 +1,13 @@
-import styled from "styled-components";
+import { PageTitle } from "./PageTitle";
 import { ProfileInfo } from "./ProfileInfo";
 
 export const Profile = () => {
+  const pageTitle = "Profile"
+
   return (
     <>
-      <SPageTitle>Profile</SPageTitle>
+      <PageTitle pageTitle={pageTitle} />
       <ProfileInfo />
     </>
   );
 };
-
-const SPageTitle = styled.h1`
-  text-align: center;
-  font-family: sans-serif;
-  margin: 20px 0 30px 0;
-`;
