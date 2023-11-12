@@ -7,7 +7,7 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/pages" element={<Profile />} />
-        <Route path="/pages/links" element={<Link/>} />
+        <Route path="/pages/links" element={<Link />} />
       </Routes>
     </BrowserRouter>
   );
