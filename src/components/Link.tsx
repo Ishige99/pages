@@ -1,4 +1,11 @@
 import { PageTitle } from "./PageTitle";
+import styled from "styled-components";
+import githubLogo from "../images/logo-github.png";
+import linkedInLogo from "../images/logo-linkedin.png";
+import qiitaLogo from "../images/logo-qiita.png";
+import wantedlyLogo from "../images/logo-wantedly.png";
+import xLogo from "../images/logo-x.png";
+import zennLogo from "../images/logo-zenn.svg";
 
 export const Link = () => {
   const pageTitle = "Links"
@@ -6,15 +13,64 @@ export const Link = () => {
   return (
     <>
       <PageTitle pageTitle={pageTitle} />
-      <ul>
-        <li>GitHub: <a href="https://github.com/Ishige99">https://github.com/Ishige99</a></li>
-        <li>X: <a href="https://twitter.com/osamu_000">https://twitter.com/osamu_000</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/">https://www.linkedin.com/in/osamu-ishiyama-a0331029b/</a></li>
-        <li>Wantedly: <a href="https://www.wantedly.com/id/osamu_000">https://www.wantedly.com/id/osamu_000</a></li>
-        <li>Qiita: <a href="https://qiita.com/ishige990">https://qiita.com/ishige990</a></li>
-        <li>Zenn: <a href="https://zenn.dev/iosamu">https://zenn.dev/iosamu</a></li>
-        <li>Bento: <a href="https://bento.me/osamu">https://bento.me/osamu</a></li>
-      </ul>
+      <SLists>
+        <SList>
+          <SListBlock>
+            <SLogo src={githubLogo} /> 
+            <p><a href="https://github.com/Ishige99">https://github.com/Ishige99</a></p>
+          </SListBlock>
+        </SList>
+        <SList>
+          <SListBlock>
+            <SLogo src={xLogo} /> 
+            <p><a href="https://twitter.com/osamu_000">https://twitter.com/osamu_000</a></p>
+          </SListBlock>
+        </SList>
+        <SList>
+          <SListBlock>
+            <SLogo src={linkedInLogo} /> 
+            <p><a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/">https://www.linkedin.com/in/osamu-ishiyama-a0331029b/</a></p>
+          </SListBlock>
+        </SList>
+        <SList>
+          <SListBlock>
+            <SLogo src={wantedlyLogo} /> 
+            <p><a href="https://www.wantedly.com/id/osamu_000">https://www.wantedly.com/id/osamu_000</a></p>
+          </SListBlock>
+        </SList>
+        <SList>
+          <SListBlock>
+            <SLogo src={qiitaLogo} /> 
+            <p><a href="https://qiita.com/osamu_0">https://qiita.com/osamu_0</a></p>
+          </SListBlock>
+        </SList>
+        <SList>
+          <SListBlock>
+            <SLogo src={zennLogo} /> 
+            <p><a href="https://zenn.dev/iosamu">https://zenn.dev/iosamu</a></p>
+          </SListBlock>
+        </SList>
+      </SLists>
     </>
   )
 }
+
+const SLists = styled.div`
+  list-style: none;
+  padding: 0;
+  text-align: center;
+`
+const SListBlock = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+const SList = styled.div`
+  margin-right: 20px;
+`
+const SLogo = styled.img`
+  width: 25px;
+  height: 25px
+  margin-right: 15px;
+  padding-right: 5px;
+`
