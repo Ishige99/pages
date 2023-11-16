@@ -9,14 +9,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/pages" element={<Profile />} />
-          <Route path="/pages/links" element={<Link />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        <Route path="/pages" element={<Profile />} />
+        <Route path="/pages/links" element={<Link />} />
+      </Routes>
+    </BrowserRouter>
   );
 };

@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom";
+import headerLogo from "../images/header_logo.png";
+
 export const Header = () => {
   return (
-    <h1>Header</h1>
-  )
-}
+    <>
+      <img src={headerLogo} />
+      <Link to={"/pages/links"}>Links</Link>
+    </>
+  );
+};

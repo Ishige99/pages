@@ -6,6 +6,9 @@ import wantedlyLogo from "../images/logo-wantedly.png";
 import xLogo from "../images/logo-x.png";
 import zennLogo from "../images/logo-zenn.svg";
 
+// todo: 画像インポートファイルまとめてもいいかも
+// todo: blankで表示したい
+
 export const LinkList = () => {
   const pageTitle = "Links"
 
