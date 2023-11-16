@@ -5,9 +5,9 @@ import headerLogo from "../images/header_logo.png";
 export const Header = () => {
   return (
     <SHeader>
-      <SHeaderLogo src={headerLogo} />
+      <Link to={"/pages"}><SHeaderLogo src={headerLogo} /></Link>
       <div>
-        <SLink to={"/pages/links"}>Links</SLink>
+        <SHeaderLink to={"/pages/links"}>Links</SHeaderLink>
       </div>
     </SHeader>
   );
@@ -24,6 +24,6 @@ const SHeaderLogo = styled.img`
   height: 70px;
   margin: 0 0 0 30px;
 `;
-const SLink = styled(Link)`
+const SHeaderLink = styled(Link)`
   margin-right: 100px;
 `;
