@@ -1,5 +1,6 @@
 import { Profile } from "./components/Profile";
 import { Link } from "./components/Link";
+import { Portfolio } from "./components/Portfolio";
 import { Header } from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +14,8 @@ export const App = () => {
       <Header />
       <Routes>
         <Route path="/pages" element={<Profile />} />
-        <Route path="/pages/links" element={<Link />} />
+        <Route path="/pages/link" element={<Link />} />
+        <Route path="/pages/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );

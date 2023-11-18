@@ -7,7 +7,7 @@ export const Header = () => {
     <SHeader>
       <Link to={"/pages"}><SHeaderLogo src={headerLogo} /></Link>
       <div>
-        <SHeaderLink to={"/pages/links"}>Links</SHeaderLink>
+        <SHeaderLink to={"/pages/link"}>Links</SHeaderLink>
       </div>
     </SHeader>
   );
