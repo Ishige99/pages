@@ -17,4 +17,8 @@ export const Profile = () => {
 
 const SProfileBody = styled.div`
   margin: 0 0 80px 0;
+  transition: 0.2s;
+  @media (max-width: 600px){
+    margin: 0 0 50px 0;
+  }
 `
