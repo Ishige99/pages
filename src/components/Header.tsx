@@ -34,4 +34,6 @@ const SHeaderLinks = styled.div`
   align-items: center;
   margin-right: 30px;
 `;
-const SHeaderLink = styled(Link)``;
+const SHeaderLink = styled(Link)`
+  font-family: Arial;
+`;

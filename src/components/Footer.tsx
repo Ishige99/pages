@@ -14,5 +14,6 @@ const SFooter = styled.div`
 `;
 const SFooterCopyLight = styled.div`
   margin: 30px 0 0 0;
+  font-family: Arial;
   color: #aaaaaa;
 `;

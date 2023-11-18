@@ -19,4 +19,6 @@ const SPortfolioBody = styled.div`
 `
 const SPortfolioTmpText = styled.h3`
   text-align: center;
+  font-family: Arial;
+  color: #aaaaaa;
 `

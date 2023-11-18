@@ -41,5 +41,5 @@ const SProfileImage = styled.img`
 
 const SProfileList = styled.li`
   margin: 5px 0;
-  font-family: sans-serif;
+  font-family: Arial;
 `;
