@@ -5,10 +5,10 @@ export const Footer = () => {
     <SFooter>
       <p>© 2023 Osamu Ishiyama</p>
     </SFooter>
-  )
+  );
 };
 
 const SFooter = styled.div`
   border-top: 1px solid black;
   text-align: center;
-`
+`;

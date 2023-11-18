@@ -8,5 +8,5 @@ export const PageTitle = (props: {pageTitle: string}) => {
 const SPageTitle = styled.h1`
   text-align: center;
   font-family: sans-serif;
-  margin: 20px 0 30px 0;
+  margin: 50px 0;
 `;

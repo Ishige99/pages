@@ -1,4 +1,5 @@
 import { PageTitle } from "./PageTitle";
+import styled from "styled-components";
 
 const pageTitle = "Portfolios"
 
@@ -6,7 +7,16 @@ export const Portfolio = () => {
   return (
     <div>
       <PageTitle pageTitle={pageTitle} />
-      <h3 style={{textAlign: "center", marginTop: "100px"}}>Comming soon...</h3>
+      <SPortfolioBody>
+        <SPortfolioTmpText>Comming soon...</SPortfolioTmpText>
+      </SPortfolioBody>
     </div>
   )
 };
+
+const SPortfolioBody = styled.div`
+  margin: 0 0 80px 0;
+`
+const SPortfolioTmpText = styled.h3`
+  text-align: center;
+`
