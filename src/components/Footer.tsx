@@ -9,7 +9,7 @@ export const Footer = () => {
 };
 
 const SFooter = styled.div`
-  border-top: 1px solid black;
+  border-top: 1px solid #dddddd;
   text-align: center;
 `;
 const SFooterCopyLight = styled.div`
