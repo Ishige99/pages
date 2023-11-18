@@ -39,5 +39,12 @@ const SHeaderLinks = styled.div`
   margin-right: 30px;
 `;
 const SHeaderLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
   font-family: Arial;
+  transition: 0.1s;
+  &:hover {
+    color: #aaaaaa;
+  }
 `;
