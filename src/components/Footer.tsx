@@ -1,7 +1,14 @@
+import styled from "styled-components";
+
 export const Footer = () => {
   return (
-    <div style={{borderTop: "1px solid black", textAlign: "center"}}>
+    <SFooter>
       <p>© 2023 Osamu Ishiyama</p>
-    </div>
+    </SFooter>
   )
 };
+
+const SFooter = styled.div`
+  border-top: 1px solid black;
+  text-align: center;
+`
