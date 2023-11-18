@@ -5,71 +5,53 @@ import qiitaLogo from "../images/logo-qiita.png";
 import wantedlyLogo from "../images/logo-wantedly.png";
 import xLogo from "../images/logo-x.png";
 import zennLogo from "../images/logo-zenn.svg";
+import bentoLogo from "../images/logo-bento.svg"
 
 // todo: 画像インポートファイルまとめてもいいかも
-// todo: blankで表示したい
+
+  const pageTitle = "Links";
 
 export const LinkList = () => {
-  const pageTitle = "Links"
-
   return (
-    <SLists>
-      <SList>
-        <SListBlock>
-          <SLogo src={githubLogo} /> 
-          <p><a href="https://github.com/Ishige99">https://github.com/Ishige99</a></p>
-        </SListBlock>
-      </SList>
-      <SList>
-        <SListBlock>
-          <SLogo src={xLogo} /> 
-          <p><a href="https://twitter.com/osamu_000">https://twitter.com/osamu_000</a></p>
-        </SListBlock>
-      </SList>
-      <SList>
-        <SListBlock>
-          <SLogo src={linkedInLogo} /> 
-          <p><a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/">https://www.linkedin.com/in/osamu-ishiyama-a0331029b/</a></p>
-        </SListBlock>
-      </SList>
-      <SList>
-        <SListBlock>
-          <SLogo src={wantedlyLogo} /> 
-          <p><a href="https://www.wantedly.com/id/osamu_000">https://www.wantedly.com/id/osamu_000</a></p>
-        </SListBlock>
-      </SList>
-      <SList>
-        <SListBlock>
-          <SLogo src={qiitaLogo} /> 
-          <p><a href="https://qiita.com/osamu_0">https://qiita.com/osamu_0</a></p>
-        </SListBlock>
-      </SList>
-      <SList>
-        <SListBlock>
-          <SLogo src={zennLogo} /> 
-          <p><a href="https://zenn.dev/iosamu">https://zenn.dev/iosamu</a></p>
-        </SListBlock>
-      </SList>
-    </SLists>
-  )
-}
+    <SLinkList>
+      <a href="https://github.com/Ishige99" rel="noreferrer" target="_blank">
+        <SLogoImage src={githubLogo} />
+      </a>
+      <a href="https://twitter.com/osamu_000" rel="noreferrer" target="_blank">
+        <SLogoImage src={xLogo} />
+      </a>
+      <a href="https://bento.me/osamu" rel="noreferrer" target="_blank">
+        <SLogoImage src={bentoLogo} />
+      </a>
+      <a href="https://qiita.com/osamu_0" rel="noreferrer" target="_blank">
+        <SLogoImage src={qiitaLogo} />
+      </a>
+      <a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/" rel="noreferrer" target="_blank">
+        <SLogoImage src={linkedInLogo} />
+      </a>
+      <a href="https://www.wantedly.com/id/osamu_000" rel="noreferrer" target="_blank">
+        <SLogoImage src={wantedlyLogo} />
+      </a>
+      {/* <a href="https://zenn.dev/iosamu" rel="noreferrer" target="_blank">
+        <SLogoImage src={zennLogo} />
+      </a> */}
+    </SLinkList>
+  );
+};
 
-const SLists = styled.div`
-  list-style: none;
-  padding: 0;
-  text-align: center;
-`
-const SListBlock = styled.div`
+const SLinkList = styled.div`
+  width: 55%;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-`
-const SList = styled.div`
-  margin-right: 20px;
-`
-const SLogo = styled.img`
-  width: 25px;
-  height: 25px
-  margin-right: 15px;
-  padding-right: 5px;
-`
+  flex-wrap: wrap;
+`;
+const SLogoImage = styled.img`
+  width: 60px;
+  margin: 10px 0 0 0;
+  transition: 0.15s;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
