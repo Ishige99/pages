@@ -26,6 +26,10 @@ const SHeaderLogo = styled.img`
   width: 70px;
   height: 70px;
   margin: 0 0 0 30px;
+  transition: 0.15s;
+  &:hover {
+    transform: scale(1.15);
+  }
 `;
 const SHeaderLinks = styled.div`
   width: 200px;
