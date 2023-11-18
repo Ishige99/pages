@@ -2,6 +2,7 @@ import { Profile } from "./components/Profile";
 import { Link } from "./components/Link";
 import { Portfolio } from "./components/Portfolio";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // todo: 直リンク入力だと未レンダリングにより404になるので、リダイレクトなりの対応が必要
@@ -17,6 +18,7 @@ export const App = () => {
         <Route path="/pages/link" element={<Link />} />
         <Route path="/pages/portfolio" element={<Portfolio />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
