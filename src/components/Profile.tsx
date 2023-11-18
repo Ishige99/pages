@@ -1,13 +1,13 @@
 import { PageTitle } from "./PageTitle";
 import { ProfileInfo } from "./ProfileInfo";
 
-export const Profile = () => {
-  const pageTitle = "Profile"
+const pageTitle = "Profile"
 
+export const Profile = () => {
   return (
-    <>
+    <div>
       <PageTitle pageTitle={pageTitle} />
       <ProfileInfo />
-    </>
+    </div>
   );
 };
