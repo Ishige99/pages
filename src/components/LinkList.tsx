@@ -7,9 +7,7 @@ import xLogo from "../images/logo-x.png";
 import zennLogo from "../images/logo-zenn.svg";
 import bentoLogo from "../images/logo-bento.svg"
 
-// todo: 画像インポートファイルまとめてもいいかも
-
-  const pageTitle = "Links";
+const pageTitle = "Links";
 
 export const LinkList = () => {
   return (

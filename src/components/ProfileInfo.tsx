@@ -31,7 +31,6 @@ const SProfileContainer = styled.div`
   flex-wrap: wrap;
   gap: 50px;
 `;
-// todo: レスポンシブ対応にする必要あり
 const SProfileImage = styled.img`
   height: 250px;
   width: 250px;
