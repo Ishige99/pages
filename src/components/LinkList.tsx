@@ -40,18 +40,22 @@ export const LinkList = () => {
 };
 
 const SLinkList = styled.div`
-  width: 55%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 50px;
 `;
 const SLogoImage = styled.img`
   width: 60px;
   margin: 10px 0 0 0;
-  transition: 0.15s;
+  transition: 0.2s;
   &:hover {
     transform: scale(1.2);
+  }
+  @media (max-width: 600px){
+    margin: 20px 0 0 0;
   }
 `;

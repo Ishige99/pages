@@ -44,7 +44,7 @@ const SHeaderLink = styled(Link)`
   color: black;
   font-size: 18px;
   font-family: Arial;
-  transition: 0.1s;
+  transition: 0.2s;
   &:hover {
     color: #aaaaaa;
   }
