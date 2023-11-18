@@ -36,8 +36,7 @@ const SProfileImage = styled.img`
   height: 250px;
   width: 250px;
 `;
-const SProfileLists = styled.div`
-`
 const SProfileList = styled.p`
   font-family: Arial;
+  font-size: 17px;
 `;
