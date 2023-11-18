@@ -9,6 +9,7 @@ export const Header = () => {
         <SHeaderLogo src={headerLogo} />
       </Link>
       <SHeaderLinks>
+        <SHeaderLink to={"/pages"}>Profile</SHeaderLink>
         <SHeaderLink to={"/pages/link"}>Links</SHeaderLink>
         <SHeaderLink to={"/pages/portfolio"}>Portfolios</SHeaderLink>
       </SHeaderLinks>
@@ -32,7 +33,7 @@ const SHeaderLogo = styled.img`
   }
 `;
 const SHeaderLinks = styled.div`
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,5 +47,8 @@ const SHeaderLink = styled(Link)`
   transition: 0.1s;
   &:hover {
     color: #aaaaaa;
+  }
+  @media (max-width: 600px){
+    font-size: 14px;
   }
 `;
