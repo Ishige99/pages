@@ -2,12 +2,8 @@ import styled from "styled-components";
 import githubLogo from "../images/logo-github.png";
 import linkedInLogo from "../images/logo-linkedin.png";
 import qiitaLogo from "../images/logo-qiita.png";
-import wantedlyLogo from "../images/logo-wantedly.png";
 import xLogo from "../images/logo-x.png";
-import zennLogo from "../images/logo-zenn.svg";
 import bentoLogo from "../images/logo-bento.svg"
-
-const pageTitle = "Links";
 
 export const LinkList = () => {
   return (
@@ -27,12 +23,6 @@ export const LinkList = () => {
       <a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/" rel="noreferrer" target="_blank">
         <SLogoImage src={linkedInLogo} />
       </a>
-      {/* <a href="https://www.wantedly.com/id/osamu_000" rel="noreferrer" target="_blank">
-        <SLogoImage src={wantedlyLogo} />
-      </a> */}
-      {/* <a href="https://zenn.dev/iosamu" rel="noreferrer" target="_blank">
-        <SLogoImage src={zennLogo} />
-      </a> */}
     </SLinkList>
   );
 };
