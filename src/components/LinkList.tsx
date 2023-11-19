@@ -27,9 +27,9 @@ export const LinkList = () => {
       <a href="https://www.linkedin.com/in/osamu-ishiyama-a0331029b/" rel="noreferrer" target="_blank">
         <SLogoImage src={linkedInLogo} />
       </a>
-      <a href="https://www.wantedly.com/id/osamu_000" rel="noreferrer" target="_blank">
+      {/* <a href="https://www.wantedly.com/id/osamu_000" rel="noreferrer" target="_blank">
         <SLogoImage src={wantedlyLogo} />
-      </a>
+      </a> */}
       {/* <a href="https://zenn.dev/iosamu" rel="noreferrer" target="_blank">
         <SLogoImage src={zennLogo} />
       </a> */}
