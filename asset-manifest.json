@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.js": "/pages/static/js/main.edfded5d.js",
+    "main.js": "/pages/static/js/main.2c39f667.js",
     "static/media/profile.png": "/pages/static/media/profile.5fa77080811377bcd7ef.png",
     "static/media/logo-x.png": "/pages/static/media/logo-x.c9d69acfaf852c0ddb71.png",
     "static/media/header_logo.png": "/pages/static/media/header_logo.40047410edbe7fef5f0f.png",
-    "static/media/logo-wantedly.png": "/pages/static/media/logo-wantedly.5169d69d3bb8b992f2a0.png",
     "static/media/logo-bento.svg": "/pages/static/media/logo-bento.c1f90c61e880bd4c028aec7014125385.svg",
     "index.html": "/pages/index.html",
-    "main.edfded5d.js.map": "/pages/static/js/main.edfded5d.js.map"
+    "main.2c39f667.js.map": "/pages/static/js/main.2c39f667.js.map"
   },
   "entrypoints": [
-    "static/js/main.edfded5d.js"
+    "static/js/main.2c39f667.js"
   ]
 }
