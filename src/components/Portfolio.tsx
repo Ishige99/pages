@@ -8,7 +8,7 @@ export const Portfolio = () => {
     <div>
       <PageTitle pageTitle={pageTitle} />
       <SPortfolioBody>
-        <SPortfolioTmpText>Comming soon...</SPortfolioTmpText>
+        <SPortfolioTmpText>Coming soon...</SPortfolioTmpText>
       </SPortfolioBody>
     </div>
   );
